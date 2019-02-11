@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="1" name="pytest" skips="0" tests="7" time="0.060"><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="5" name="test_game_dict" time="0.0007524490356445312"></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="13" name="test_num_points_scored" time="0.0005061626434326172"></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="29" name="test_player_numbers" time="0.0007698535919189453"><failure message="AssertionError: Sequences differ: [0, 0, 1, 2, 4, 8, 11, 30, 31, 33] != [0, 2, 4, 8, 33]
+
+First differing element 1:
+0
+2
+
+First sequence contains 5 additional elements.
+First extra element 5:
+8
+
+- [0, 0, 1, 2, 4, 8, 11, 30, 31, 33]
++ [0, 2, 4, 8, 33] : Return value must be a list containing the itegers [4, 0, 2, 8, 33]">self = &lt;index_test.TestDictionaryBall testMethod=test_player_numbers&gt;
+
+    def test_player_numbers(self):
+        self.assertEqual(type(player_numbers(&quot;Charlotte Hornets&quot;)), type([]), &quot;Return value must be a list&quot;)
+&gt;       self.assertItemsEqual(player_numbers(&quot;Charlotte Hornets&quot;), [4, 0, 2, 8, 33], &quot;Return value must be a list containing the itegers [4, 0, 2, 8, 33]&quot;)
+E       AssertionError: Sequences differ: [0, 0, 1, 2, 4, 8, 11, 30, 31, 33] != [0, 2, 4, 8, 33]
+E       
+E       First differing element 1:
+E       0
+E       2
+E       
+E       First sequence contains 5 additional elements.
+E       First extra element 5:
+E       8
+E       
+E       - [0, 0, 1, 2, 4, 8, 11, 30, 31, 33]
+E       + [0, 2, 4, 8, 33] : Return value must be a list containing the itegers [4, 0, 2, 8, 33]
+
+test/index_test.py:32: AssertionError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="33" name="test_player_stats" time="0.0005397796630859375"></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="17" name="test_shoe_size" time="0.00048041343688964844"></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="21" name="test_team_colors" time="0.0005018711090087891"></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="25" name="test_team_names" time="0.0005273818969726562"></testcase></testsuite>
